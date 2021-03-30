@@ -1,0 +1,104 @@
+/* layout */
+
+body {
+    margin: 0;
+}
+.score{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlButton{
+border: none;
+width: 4em;
+padding: .3em;
+margin: .1em;
+font-weight: 800;
+font-size: larger;
+}
+
+.controlButton:hover{
+    background-color: red;
+}
+
+.grid{
+    height: 420px;
+    width: 420px;
+    border: 1px black solid;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.square{
+    height: 15px;
+    width: 15px;
+}
+/* grid furniture */
+.wall{
+    background-color: blue;
+}
+
+.power-pellets{
+    background-color: yellow;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.pac-dots{
+    background-color: tomato;
+    border: 6px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+/* Dramatis Personae */
+
+.pacman{
+    background-color: limegreen;
+    border-radius: 15px;
+    border: none;
+
+
+}
+
+.ghost{
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: unset;
+}
+
+.pinky {
+    background-color: pink;
+}
+
+.blinky {
+    background-color: silver;
+}
+
+.inky {
+    background-color: olivedrab;
+}
+
+.clyde {
+    background-color: cornflowerblue;
+}
+
+.scared-ghost{
+    background-color: darkgrey;
+}
+
+@media(max-width: 500px){  
+    .score{
+        background: white;
+    }
+}
